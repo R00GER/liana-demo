@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/d90900f2ce.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/countup@1.8.2/dist/countUp.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Liana Demo</title>
+</head>
+
+<body>
+    <div class="popup">
+        <div class="popup-icon-close">
+            <a onclick="closeNewsletter()"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="popup-header content-header">Kiitos uutiskirjeen tilauksesta!</div>
+        <div class="popup-body">Seuraa meitä myös sosiaalisessa mediassa</div>
+        <div class="popup-icons">
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="popup-bg"></div>
+    <div class="sidenav-container">
+        <div class="sidenav-content">
+            <div class="sidenav-icon">
+                <a href="#" id="close" onclick="closeSideNav()"><i class="fas fa-times"></i></a>
+            </div>
+            <ul class="sidenav-items">
+                <li class="sidenav-item"><a href="#">Company</a></li>
+                <li class="sidenav-item"><a href="#">Products</a></li>
+                <li class="sidenav-item"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <nav class="nav">
+        <div class="nav-top">
+            <div class="nav-top_content">
+                <ul class="nav-top_items">
+                    <li class="nav-top-link_item"><a href="">News</a></li>
+                    <li class="nav-top-link_item"><a href="">Intranet</a></li>
+                </ul>
+                <select name="language" id="lang">
+                    <option value="fi">Suomeksi</option>
+                    <option value="eng" selected>In English</option>
+                </select>
+                <div class="nav-top_dropdown">
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bottom">
+            <div class="nav-bottom_content">
+                <div class="nav-bottom_left">
+                    <a href="#" class="logo">
+                        <img src="img/logo.png" alt="Liana Technologies logo">
+                    </a>
+                    <ul class="nav-bottom_items">
+                        <li class="nav-bottom_item"><a href="#">Company</a></li>
+                        <li class="nav-bottom_item"><a href="#">Products</a></li>
+                        <li class="nav-bottom_item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-bottom_right">
+                    <div class="nav-bottom_search-icon">
+                        <a href="#search-page"><i class="fas fa-search"></i></a>
+                    </div>
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Search" name="search-box" id="search">
+                        <input type="submit" value="Search">
+                    </form>
+                    <div class="nav-bottom_menu-icon">
+                        <a id="menu-icon" onclick="openSideNav()"><i class="fas fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="hero-container">
+            <div class="hero-text">Software fueling digital marketing</div>
+            <div class="hero-btn"><a href="#">Learn more</a></div>
+        </div>
+    </header>
+
+    <section class="info-images-container">
+        <div class="info-images">
+            <div class="box box-01">
+                <div class="overlay-text">Company</div>
+            </div>
+
+            <div class="box box-02">
+                <div class="overlay-text">Products</div>
+            </div>
+
+            <div class="box box-03">
+                <div class="overlay-text">Contact us</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="info-numbers-container">
+        <div class="info-numbers">
+            <div class="info-numbers-client">
+                <div class="sub-grid">
+                    <div class="info-numbers-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="info-numbers-text">
+                        <div class="numbers-count" id="client-count"></div>
+                        <div class="numbers-description">Clients</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-numbers-employees">
+                <div class="sub-grid">
+                    <div class="info-numbers-icon">
+                        <i class="far fa-smile-beam"></i>
+                    </div>
+                    <div class="info-numbers-text">
+                        <div class="numbers-count" id="employee-count"></div>
+                        <div class="numbers-description">Employess</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-numbers-users">
+                <div class="sub-grid">
+                    <div class="info-numbers-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div class="info-numbers-text">
+                        <div class="numbers-count" id="users-count"></div>
+                        <div class="numbers-description">Daily users</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-container content-container">
+        <div class="news-header content-header">Latest news</div>
+        <div class="news-cards">
+            <div class="news-card" id="news-card-1">
+                <div class="news-card-date" id="news-card-date-1">27.07.2016</div>
+                <div class="news-card-body" id="news-card-body-1">
+                    Liana Technologies and Encode Solutions merge to create unique mobile solutions
+                </div>
+            </div>
+
+            <div class="news-card" id="news-card-2">
+                <div class="news-card-date" id="news-card-date-2">28.1.2016</div>
+                <div class="news-card-body" id="news-card-body-2">
+                    From a local startup to a global player: Liana Technologies among the forerunners of digital marketing techology
+                </div>
+            </div>
+            <div class="news-card" id="news-card-3">
+                <div class="news-card-date" id="news-card-date-3">02.07.2015</div>
+                <div class="news-card-body" id="news-card-body-3">
+                    Liana Technologies Hong Kong launched a series of digital marketin events in June
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="references-container content-container">
+        <div class="recerences-header content-header">References</div>
+        <div class="references-cards">
+            <div class="references-card" id="references-card-1">
+                <div class="references-card-image">
+                    <img src="img/bosch.png" alt="">
+                </div>
+                <div class="references-card-text">
+                    <div class="references-card-header" id="references-card-header-1">Robert Bosch</div>
+                    <div class="references-card-body" id="references-card-body-1">
+                        Bosch is multinational engineering and electronics company.
+                    </div>
+                </div>
+            </div>
+
+            <div class="references-card" id="references-card-2">
+                <div class="references-card-image">
+                    <img src="img/bodyshop.png" alt="" id="image-bodyshop">
+                </div>
+                <div class="references-card-text">
+                    <div class="references-card-header" id="references-card-header-2">The Body Shop</div>
+                    <div class="references-card-body" id="references-card-body-2">
+                        The Body Shop is a global beauty brand and it has more than 3,000 stores in more than 60 countries.
+                    </div>
+                </div>
+            </div>
+
+            <div class="references-card" id="references-card-3">
+                <div class="references-card-image">
+                    <img src="img/lapland.png" alt="" id="lapland">
+                </div>
+                <div class="references-card-text">
+                    <div class="references-card-header" id="references-card-header-2">Lapland Hotels</div>
+                    <div class="references-card-body" id="references-card-body-2">
+                        Lapland Hotels is the largest and the most diverse hotel chain in Lapland.
+                    </div>
+                </div>
+            </div>
+            <div class="references-card" id="references-card-4">
+                <div class="references-card-image">
+                    <img src="img/ikea.png" alt="">
+                </div>
+                <div class="references-card-text">
+                    <div class="references-card-header" id="references-card-header-2">IKEA</div>
+                    <div class="references-card-body" id="references-card-body-2">
+                        IKEA is a multinational furniture store.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="newsletter-container">
+        <div class="newsletter-header content-header">Subscribe to our newsletter</div>
+        <div class="newsletter-body">Follow our story and get the latest promotonial news about our products and event.</div>
+        <div class="newsletter-form">
+            <form action="#newsletter" name="newsletter" onsubmit="openNewsletter()">
+                <input type="email" placeholder="Your email address" id="subscribe" required>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="top">
+            <div class="top-left">
+                <h3>Liana Technologies</h3>
+            </div>
+            <div class="top-right">
+                <a href="#">Company</a>
+                <a href="#">Products</a>
+                <a href="#">Contact Us</a>
+                <a href="#">News</a>
+                <a href="#">Intranet</a>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-left">
+                <div class="bottom-left-info">
+                    <h4>Sales and inquries</h4>
+                    <p>Email: sales@lianatech.com</p>
+                    <p>Phone: +358 10 387 7053</p>
+                </div>
+                <div class="bottom-left-btn">
+                    <input type="submit" value="Contact us">
+                </div>
+                <div class="bottom-left-icons">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="bottom-right-icons">
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
