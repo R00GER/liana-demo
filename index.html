@@ -17,14 +17,15 @@
         <div class="popup-icon-close">
             <a onclick="closeNewsletter()"><i class="fas fa-times"></i></a>
         </div>
-        <div class="popup-header content-header">Kiitos uutiskirjeen tilauksesta!</div>
-        <div class="popup-body">Seuraa meitä myös sosiaalisessa mediassa</div>
+        <div class="popup-header content-header"></div>
+        <div class="popup-body"></div>
         <div class="popup-icons">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
             <a href="#"><i class="fab fa-twitter-square"></i></a>
             <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
     </div>
+
     <div class="popup-bg"></div>
     <div class="sidenav-container">
         <div class="sidenav-content">
@@ -38,6 +39,7 @@
             </ul>
         </div>
     </div>
+
     <nav class="nav">
         <div class="nav-top">
             <div class="nav-top_content">
@@ -54,6 +56,7 @@
                 </div>
             </div>
         </div>
+
         <div class="nav-bottom">
             <div class="nav-bottom_content">
                 <div class="nav-bottom_left">
@@ -103,7 +106,6 @@
             <div class="box box-03">
                 <div class="overlay-text">Contact us</div>
             </div>
-
         </div>
     </section>
 
@@ -163,6 +165,7 @@
                     From a local startup to a global player: Liana Technologies among the forerunners of digital marketing techology
                 </div>
             </div>
+
             <div class="news-card" id="news-card-3">
                 <div class="news-card-date" id="news-card-date-3">02.07.2015</div>
                 <div class="news-card-body" id="news-card-body-3">
@@ -210,6 +213,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="references-card" id="references-card-4">
                 <div class="references-card-image">
                     <img src="img/ikea.png" alt="">
@@ -221,7 +225,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -229,9 +232,9 @@
         <div class="newsletter-header content-header">Subscribe to our newsletter</div>
         <div class="newsletter-body">Follow our story and get the latest promotonial news about our products and event.</div>
         <div class="newsletter-form">
-            <form action="#newsletter" name="newsletter" onsubmit="openNewsletter()">
-                <input type="email" placeholder="Your email address" id="subscribe" required>
-                <input type="submit" value="Subscribe">
+            <form action="#" name="newsletter" id="newsletter">
+                <input type="email" placeholder="Your email address" id="email" name="email" required>
+                <input type="button" value="Subscribe" id="submit">
             </form>
         </div>
     </section>
@@ -249,6 +252,7 @@
                 <a href="#">Intranet</a>
             </div>
         </div>
+
         <div class="bottom">
             <div class="bottom-left">
                 <div class="bottom-left-info">
@@ -272,6 +276,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/data.js"></script>
     <script src="js/script.js"></script>
 </body>
 

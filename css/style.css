@@ -491,7 +491,7 @@ header {
     border: .5px solid #D3D3D3;
 }
 
-.newsletter-form input[type=submit] {
+.newsletter-form input[type=button] {
     color: #ffffff;
     font-weight: 300;
     background-color: #539430;
