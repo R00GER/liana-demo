@@ -325,7 +325,6 @@ header {
 }
 
 .overlay-text {
-    color: #ffffff;
     font-weight: 700;
     font-size: 1.5em;
     position: absolute;
@@ -333,6 +332,11 @@ header {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.overlay-text a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .info-numbers-container {
